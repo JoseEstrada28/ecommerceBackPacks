@@ -7,10 +7,11 @@
     font-family: sans-serif;
 }
 .generalContainer{
-    width: 80%;
+    width: 90%;
+    
     margin: 0 auto;
     margin-top: 40px;
-    border: 1px solid black;
+    
 }
 /*begins Header*/
 .responsive__icono{
@@ -26,17 +27,18 @@ header{
     flex-direction: row;
     align-items: center;
    background-color: $principal__color;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 35px;
    //align-items: center;
-   .header__logo{
+//    .header__logo{
     
-    img{
-        margin-right: 5rem;
-    }
+//     // img{
+//     //     margin-right: 4rem;
+//     // }
   
     
    
-}
+// }
 .label__menu{
     display: none;
     width: 30px;
@@ -51,22 +53,29 @@ header{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin-right: 40px;
+        
         &--box{
             outline: none;
             border: none;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid $principal__color__header;
             padding: 10px;
+            padding-left: 20px;
+            background: white url(../img/search__header.png) no-repeat 2px center;
+            background-size: 12px ;
+            font-size: 13px;
+            ::placeholder{
+                color: $principal__color__header;
+                font-size: 5px;
+            }
         }
         &--img{
             width: 2rem;
             height: 2rem;
             margin-left: 30px;
+            margin-top: 10px;
         }
     }
 }
-
-   
 
 }
 
@@ -104,9 +113,85 @@ header .label__menu:hover{
 .header__menu .header__lista--item a{
     display: block;
     padding: 10px;
-    color: #4B5D72;
+    color: $principal__color__header;
     text-decoration: none;
     text-align: center;
+    font-size: 13px;
+}
+//carousel//
+.carousel-item{
+    img{
+        width: 100%;
+        height: 600px;
+    }
+   
+}
+//info
+.complement{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 105px;
+    &__container{
+        margin-bottom: 40px;
+    }
+    &__info{
+        font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    color: $principal__color__header;
+    }
+}
+
+//COLECTION//
+.shop__title{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+.collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__showing{
+        width: 50%;
+        position: left;
+    }
+    &__list{
+        width: 50%;
+        text-align: right;
+        
+    }
+    .cards{
+        width: 100%;
+        height: 500px;
+       
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        padding-left: 20px;
+        justify-content: center;
+
+        .collection__card{
+            width: 25%;
+            height: 430px;
+            margin-right: 40px;
+    margin-left: 40px;
+            img{
+                width: 100%;
+                height: 65%;
+            }
+            p{
+                text-align: center;
+            }
+            
+        }
+
+    }
 }
 
 @media (max-width: 768px) {

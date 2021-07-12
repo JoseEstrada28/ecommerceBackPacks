@@ -103,7 +103,8 @@ header .label__menu:hover {
 .collection {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  overflow-y: scroll; }
   .collection__showing {
     width: 50%;
     position: left; }
@@ -128,6 +129,32 @@ header .label__menu:hover {
         height: 65%; }
       .collection .cards .collection__card p {
         text-align: center; }
+      .collection .cards .collection__card .buy a {
+        width: 60%;
+        height: 20px;
+        background-color: orange;
+        padding: 10px;
+        text-decoration: none;
+        color: white; }
+
+.print__car {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30%;
+  border: 1px solid black; }
+  .print__car button {
+    width: 10%;
+    height: 30px;
+    color: red;
+    text-align: center; }
+  .print__car ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-bottom: 20%; }
+    .print__car ul li {
+      padding: 15px; }
 
 @media (max-width: 768px) {
   header {

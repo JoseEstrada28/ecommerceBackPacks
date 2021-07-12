@@ -156,6 +156,7 @@ header .label__menu:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow-y: scroll;
     &__showing{
         width: 50%;
         position: left;
@@ -188,11 +189,42 @@ header .label__menu:hover{
             p{
                 text-align: center;
             }
-            
+            .buy a{
+                width: 60%;
+                height: 20px;
+                background-color: orange;
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+            }
         }
 
     }
 }
+//carrito
+.print__car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30%;
+    border: 1px solid black;
+    button{
+        width: 10%;
+        height: 30px;
+        color: red;
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin-bottom: 20%;
+        li{
+            padding: 15px;
+        }
+    }
+}
+
 
 @media (max-width: 768px) {
     header{

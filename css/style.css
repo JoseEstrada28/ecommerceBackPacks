@@ -129,6 +129,22 @@ header .label__menu:hover {
       .collection .cards .collection__card p {
         text-align: center; }
 
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .row__card {
+    width: 30%;
+    height: 100%;
+    padding: 15px; }
+    .row__card .details img {
+      width: 100%;
+      height: 50%; }
+    .row__card .details p {
+      text-align: center; }
+
 @media (max-width: 768px) {
   header {
     width: 100%;

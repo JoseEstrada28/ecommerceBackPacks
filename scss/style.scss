@@ -193,13 +193,22 @@ header .label__menu:hover{
 
     }
 }
+.title__carousel{
+    margin-bottom: 5%;
+     margin-top: 8%;
+    text-align: center;
+}
 .row{
    
-    width: 100%;
+    width: 85%;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
     justify-content: center;
+   
+   
     &__card{
         width: 30%;
         height: 100%;
@@ -212,11 +221,117 @@ header .label__menu:hover{
             }
             p{
                 text-align: center;
+           
             }
         }
      
     }
 }
+.slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    // color: #212529;
+    color: #9F8460;
+    -webkit-font-smoothing: antialiased;}
+ //Shop all products
+ .shop{
+     width: 100%;
+     text-align: center;
+     margin-bottom: 10%;
+     margin-top: 5%;
+     a{
+         text-decoration: none;
+         background-color: #c3a376;
+         padding: 15px;
+         
+         span{
+             color: white;
+             font-size: 13px;
+         }
+     }
+ }
+ //follow
+ .circle{
+    width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-bottom: 3rem;
+     align-items: center;
+
+     p{
+         text-align: center;
+     }
+     a{
+        img{
+            width: 2.5rem;
+           
+        }
+     }
+     
+ }
+ footer{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 50px;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     .account{
+        //  width: 30%;
+         .social{
+             display: flex;
+             flex-direction: row;
+             justify-content: flex-start;
+             list-style-type: none;
+             padding-left: 0px;
+             .first__item{
+                 padding-left: 0px;
+             }
+             li{
+                 padding: 8px;
+             }
+             img{
+                 width: 2rem;
+             }
+         }
+     }
+     .reserved{
+        
+         display: flex;
+         flex-direction: column;
+         .reserved__copyright{
+            font-size: 13px;
+            color: $principal__color__header;
+            text-align: end;
+        }
+         
+
+         &__back{
+             display: flex;
+             flex-direction: row;
+             list-style-type: none;
+             justify-content: flex-end;
+            
+            .modifire-padding{
+                padding-right: 0px;
+            }
+             &--item{
+                 padding-right:15px ;
+                 a{
+                    text-decoration: none;
+                    color: $principal__color__header;
+                    font-size: 13px;
+                 }
+             }
+             
+
+            }
+     }
+
+ }
 
 @media (max-width: 768px) {
     header{

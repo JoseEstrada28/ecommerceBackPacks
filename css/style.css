@@ -129,11 +129,17 @@ header .label__menu:hover {
       .collection .cards .collection__card p {
         text-align: center; }
 
+.title__carousel {
+  margin-bottom: 5%;
+  margin-top: 8%;
+  text-align: center; }
+
 .row {
-  width: 100%;
+  width: 85%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 auto;
   justify-content: center; }
   .row__card {
     width: 30%;
@@ -144,6 +150,79 @@ header .label__menu:hover {
       height: 50%; }
     .row__card .details p {
       text-align: center; }
+
+.slick-next:before, .slick-prev:before {
+  font-family: slick;
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: #9F8460;
+  -webkit-font-smoothing: antialiased; }
+
+.shop {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 5%; }
+  .shop a {
+    text-decoration: none;
+    background-color: #c3a376;
+    padding: 15px; }
+    .shop a span {
+      color: white;
+      font-size: 13px; }
+
+.circle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+  align-items: center; }
+  .circle p {
+    text-align: center; }
+  .circle a img {
+    width: 2.5rem; }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  footer .account .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding-left: 0px; }
+    footer .account .social .first__item {
+      padding-left: 0px; }
+    footer .account .social li {
+      padding: 8px; }
+    footer .account .social img {
+      width: 2rem; }
+  footer .reserved {
+    display: flex;
+    flex-direction: column; }
+    footer .reserved .reserved__copyright {
+      font-size: 13px;
+      color: #8B7587;
+      text-align: end; }
+    footer .reserved__back {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      justify-content: flex-end; }
+      footer .reserved__back .modifire-padding {
+        padding-right: 0px; }
+      footer .reserved__back--item {
+        padding-right: 15px; }
+        footer .reserved__back--item a {
+          text-decoration: none;
+          color: #8B7587;
+          font-size: 13px; }
 
 @media (max-width: 768px) {
   header {

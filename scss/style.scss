@@ -233,7 +233,7 @@ header .label__menu:hover{
     line-height: 1;
     opacity: .75;
     // color: #212529;
-    color: #9F8460;
+    color: #ecdecc;
     -webkit-font-smoothing: antialiased;}
  //Shop all products
  .shop{
@@ -280,7 +280,25 @@ header .label__menu:hover{
      justify-content: space-around;
      flex-wrap: wrap;
      .account{
-        //  width: 30%;
+        //  width: 50%;
+        .suscribe{
+            border-bottom: 1px solid lightgray;
+            padding: 8px;
+            &__line{
+                border: none;
+                outline: none;
+                ::placeholder{
+                    font-size: 13px;
+                }
+            }
+            
+            .suscribe__send{
+                border: none;
+                background-color: white;
+                font-size: 13px;
+            }
+            
+        }
          .social{
              display: flex;
              flex-direction: row;

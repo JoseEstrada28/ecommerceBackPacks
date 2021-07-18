@@ -156,7 +156,7 @@ header .label__menu:hover {
   font-size: 20px;
   line-height: 1;
   opacity: .75;
-  color: #9F8460;
+  color: #ecdecc;
   -webkit-font-smoothing: antialiased; }
 
 .shop {
@@ -191,6 +191,18 @@ footer {
   margin-bottom: 50px;
   justify-content: space-around;
   flex-wrap: wrap; }
+  footer .account .suscribe {
+    border-bottom: 1px solid lightgray;
+    padding: 8px; }
+    footer .account .suscribe__line {
+      border: none;
+      outline: none; }
+      footer .account .suscribe__line ::placeholder {
+        font-size: 13px; }
+    footer .account .suscribe .suscribe__send {
+      border: none;
+      background-color: white;
+      font-size: 13px; }
   footer .account .social {
     display: flex;
     flex-direction: row;

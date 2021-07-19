@@ -517,6 +517,15 @@ header .label__menu:hover{
        
     }
 }
+//BLOG////////////////////////////
+.blog{
+    margin-bottom: 15px;
+    &__title{
+        text-align: center;
+        padding-left: 15px;
+        padding-top: 50px;
+    }
+}
 
 @media (max-width: 768px) {
     header{

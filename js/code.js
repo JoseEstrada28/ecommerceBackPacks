@@ -1,3 +1,19 @@
+
+///////////////ANIMATIONS
+//las animaciones funcionan dando click, por ejemplo se podria utilizar para un "ver menos"
+$(document).ready(function(){
+  $(`#fadeout`).click(function(){
+    $(`#blogTitle`).fadeOut(1000)
+  });
+  $(`#fadein`).click(function(){
+    $(`#blogTitle`).fadeIn(1000)})
+    $(`#tog`).click(function(){
+      $(`#blogTitle`).fadeToggle()})
+});
+
+
+
+
 $('.slider').slick({
   //dot none = false
     dots: false,
@@ -34,3 +50,6 @@ $('.slider').slick({
       // instead of a settings object
     ]
   });
+
+
+  

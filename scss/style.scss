@@ -469,7 +469,54 @@ header .label__menu:hover{
          }
      }
  }
+//CONTACT/////////////////
+.contact{
+    width: 100%;
+    margin-top: 4rem;
+    &__title{
+        text-align: center;
+        padding-left: 20px;
+    }
+}
+.contactInfo{
+    width: 100%;
+    border: 1px solid black;
+    height: 500px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    &__img{
+        width: 40%;
+        height: 100%;
+        border: 1px solid black;
+        margin-left: 10%;
+        
+        img{
+            width: 85%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__information{
+        width: 40%;
+        border: 1px solid black;
+    }
 
+    &__information{
+      
+     padding-top: 80px;
+     padding-left: 30px;
+    }
+
+    .map{
+        width: 100%;
+        height: 500px;
+       
+       
+    }
+}
 
 @media (max-width: 768px) {
     header{

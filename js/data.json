@@ -1,0 +1,51 @@
+
+  [ {   "name": "Aster Back Pack",
+         "price": "$20",
+        "id": 1 }, 
+
+    {   "name": "Blue Bag",
+        "price": "$35",
+        "id": 2},
+        
+    {
+        "name": "Coast Bag",
+        "price": "$54",
+        "id": 3
+    },
+    {
+        "name": "Eugene Wallet",
+        "price": "$63",
+        "id": 4
+    },
+   
+   {
+    "name": "Gray Beanie",
+    "price": "$100",
+    "id": 5
+   },
+   {
+    "name": "Horwood Cap",
+    "price": "$50",
+    "id": 6
+   },
+   {
+    "name": "Leather Wallet",
+    "price": "$96",
+    "id": 7
+   },
+
+  {
+    "name": "Odell Messenger",
+    "price": "$86",
+    "id": 8
+  },
+
+   {
+    "name": "Woven BackPack",
+    "price": "$75",
+    "id": 9
+   }
+
+
+  ]
+

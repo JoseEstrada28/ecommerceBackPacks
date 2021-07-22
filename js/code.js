@@ -52,4 +52,24 @@ $('.slider').slick({
   });
 
 
+  /AJAX///////////////
+  $.ajax({
+    url: "js/data.json",
+    method: "GET",
+    dataType: "JSON",
+    success: function (data, status, jqXHR){
+      console.log(data);
+      console.log(status);
+      console.log(jqXHR);
+    },
+    error: function (jqXHR, status, error){
+      console.log(jqXHR);
+      console.log(status);
+      console.log(error);
+    }
+
+
+  });
+
+  
   

@@ -71,5 +71,10 @@ $('.slider').slick({
 
   });
 
+  $.get( "js/data.json", function( data ) {
+    $( "name1" )
+      .append(  + data.name )
+      .append(  data.price);
+  }, "json" );
   
   

@@ -526,6 +526,21 @@ header .label__menu:hover{
         padding-top: 50px;
     }
 }
+.blog-cards{
+    width: 90%;
+    border: 1px solid black;
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .card-box{
+        
+        
+       
+       
+      
+    }
+}
 
 @media (max-width: 768px) {
     header{

@@ -369,6 +369,13 @@ footer {
     padding-left: 15px;
     padding-top: 50px; }
 
+.blog-cards {
+  width: 90%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
 @media (max-width: 768px) {
   header {
     width: 100%;

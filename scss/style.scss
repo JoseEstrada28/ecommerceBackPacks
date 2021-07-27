@@ -534,11 +534,13 @@ header .label__menu:hover{
     flex-direction: row;
     flex-wrap: wrap;
     .card-box{
-        
+        width: 33%;
         
        
        
-      
+        img{
+            width: 90%;
+        }
     }
 }
 

@@ -375,6 +375,10 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+  .blog-cards .card-box {
+    width: 33%; }
+    .blog-cards .card-box img {
+      width: 90%; }
 
 @media (max-width: 768px) {
   header {

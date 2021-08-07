@@ -42,7 +42,7 @@ header{
 .label__menu{
     display: none;
     width: 30px;
-    height: 30px;
+    
     padding: 30px;
    
 }
@@ -157,15 +157,22 @@ header .label__menu:hover{
     flex-direction: row;
     flex-wrap: wrap;
     
+  .anex{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
     &__showing{
-        width: 50%;
-        position: left;
-    }
-    &__list{
-        width: 50%;
-        text-align: right;
+        width: 100%;
+        padding-right: 3rem;
         
     }
+    &__list{
+        width: 100%;
+       position: right;
+        margin-bottom: 2rem;
+        
+    }
+  }
     .cards{
         width: 100%;
         height: 100%;
@@ -545,14 +552,21 @@ header .label__menu:hover{
 }
 
 @media (max-width: 768px) {
-    header{
+    .generalContainer{
         width: 100%;
+        
+        margin: 0 auto;
+        margin-top: 40px;
+        
+    }
+    header{
+        width: 95%;
         height: 80px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        background-image: linear-gradient(to bottom, #B3FFFF, white);
-        justify-content: flex-start;
+       
+        justify-content: space-between;
         
         
     
@@ -561,6 +575,7 @@ header .label__menu:hover{
         display: block;
 
     }
+   
     .vacio{
         display: flex;
         flex-direction: row;
@@ -572,16 +587,20 @@ header .label__menu:hover{
     }
     .header__menu {
         position: absolute;
-        background-image: linear-gradient(to bottom, #B3FFFF, white);
+      background-color: white;
         width: 100%;
-        margin-top: 260px;
+        margin-top: 750px;
+        height: 100%;
+        
         margin-left: -200%;
         transition: all 0.5s;
+        z-index: 1;
     }
     .header__menu .header__lista{
         flex-direction: column;
         display: flex;
         justify-content: flex-start;
+      
 
     }
     .header__menu .header__lista--item a{
@@ -592,15 +611,50 @@ header .label__menu:hover{
         text-align: center;
     }
     .header__menu .header__lista--item {
-        border-bottom: 1px solid $fontcolor;
-        border-right: 1px solid $fontcolor;
+        // border-bottom: 1px solid $fontcolor;
+   
+        z-index: 1;
     }
-    .header__lista--alter{
-        border-top: 1px solid $fontcolor;
-    }
+    // .header__lista--alter{
+    //     // border-top: 1px solid $fontcolor;
+    // }
     #btn-menu:checked ~ .header__menu {
         margin: 0;
-        margin-top: 260px;
+        margin-top: 750px;
         
 }
+.carousel-item{
+    img{
+        width: 100%;
+        height: 300px;
+    }
+   
+}
+.complement {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 105px;
+}
+header .search__list--box {
+    display: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #8B7587;
+    padding: 10px;
+    padding-left: 20px;
+    background: white url(../img/search__header.png) no-repeat 2px center;
+    background-size: 12px;
+    font-size: 13px;
+}
+
+//shop
+// .collection .cards .collection__card {
+//     width: 40%;
+//     height: 430px;
+//     /* margin-right: 0; */
+//     margin-left: 40px;
+// }
 }

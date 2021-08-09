@@ -25,7 +25,6 @@ header {
   header .label__menu {
     display: none;
     width: 30px;
-    height: 30px;
     padding: 30px; }
   header .search__list {
     list-style-type: none;
@@ -104,12 +103,19 @@ header .label__menu:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
-  .collection__showing {
-    width: 50%;
-    position: left; }
-  .collection__list {
-    width: 50%;
-    text-align: right; }
+  .collection .anex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 15px; }
+    .collection .anex__showing {
+      padding-right: 20px; }
+    .collection .anex__list {
+      width: 100%;
+      position: right;
+      margin-bottom: 2rem; }
   .collection .cards {
     width: 100%;
     height: 100%;
@@ -122,12 +128,20 @@ header .label__menu:hover {
       width: 25%;
       height: 430px;
       margin-right: 40px;
+      text-align: center;
       margin-left: 40px; }
       .collection .cards .collection__card img {
         width: 100%;
         height: 65%; }
       .collection .cards .collection__card p {
         text-align: center; }
+      .collection .cards .collection__card .compra {
+        background-color: #c3a376;
+        padding: 10px;
+        margin: 0 auto;
+        cursor: pointer;
+        text-decoration: none;
+        color: white; }
 
 .title__carousel {
   margin-bottom: 5%;
@@ -171,6 +185,10 @@ header .label__menu:hover {
     .shop a span {
       color: white;
       font-size: 13px; }
+
+.compra:hover {
+  padding: 10px;
+  font-size: 17px; }
 
 .circle {
   width: 100%;
@@ -251,7 +269,7 @@ footer {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 40px;
-  height: 650px;
+  height: 100%;
   padding: 10px;
   border: 1px solid black; }
   .blockOne__img {
@@ -369,15 +387,140 @@ footer {
     padding-left: 15px;
     padding-top: 50px; }
 
-@media (max-width: 768px) {
-  header {
+.blog-cards {
+  width: 90%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .blog-cards .card-box {
+    width: 33%; }
+    .blog-cards .card-box img {
+      width: 90%; }
+
+.products {
+  height: 100%;
+  width: 100%;
+  border: 3px solid black; }
+  .products .lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
     width: 100%;
+    justify-content: space-evenly;
+    border-bottom: 3px solid black; }
+    .products .lista li {
+      padding: 10px; }
+
+@media (max-width: 900px) {
+  .collection .cards .collection__card {
+    width: 45%;
+    height: 400px;
+    margin-right: 40px;
+    margin-left: 40px; } }
+
+@media (max-width: 768px) {
+  .about {
+    width: 100%;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-bottom: 40px; }
+    .about__us {
+      text-align: center; }
+  .blockOne {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid black; }
+    .blockOne__img {
+      width: 75%;
+      height: 100%;
+      border: 1px solid black;
+      margin-left: 4%;
+      margin-right: 5%; }
+      .blockOne__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .blockOne__description {
+      width: 100%;
+      border: 1px solid black;
+      padding: 20px; }
+      .blockOne__description p {
+        color: #8B7587; }
+      .blockOne__description .space {
+        margin-top: 2.5rem; }
+  .generalBlock {
+    width: 100%;
+    background-color: #F4F4F4; }
+    .generalBlock .blockTwo {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .generalBlock .blockTwo__information {
+        width: 100%;
+        padding: 10px; }
+        .generalBlock .blockTwo__information p {
+          color: #8B7587;
+          font-size: 13px;
+          line-height: 26px; }
+  .blockThree {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+    .blockThree .box__one {
+      width: 100%;
+      height: 100%;
+      border: 1px solid black; }
+      .blockThree .box__one--imgOne {
+        width: 95%;
+        height: 100%;
+        padding: 10px; }
+      .blockThree .box__one--imgTwo {
+        width: 95%;
+        height: 60%;
+        object-fit: cover;
+        padding: 10px;
+        margin-top: 20%;
+        padding-left: 0px; }
+      .blockThree .box__one p {
+        width: 90%;
+        padding: 40px;
+        padding-left: 42px;
+        color: #8B7587;
+        font-size: 15px; }
+  .collection .cards .collection__card {
+    width: 62%;
+    height: 400px;
+    margin-right: 40px;
+    margin-left: 40px; }
+  .generalContainer {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px; }
+  header {
+    width: 95%;
     height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: linear-gradient(to bottom, #B3FFFF, white);
-    justify-content: flex-start; }
+    justify-content: space-between; }
   header .label__menu {
     display: block; }
   .vacio {
@@ -390,11 +533,13 @@ footer {
     margin-top: 9px; }
   .header__menu {
     position: absolute;
-    background-image: linear-gradient(to bottom, #B3FFFF, white);
+    background-color: white;
     width: 100%;
-    margin-top: 260px;
+    margin-top: 750px;
+    height: 100%;
     margin-left: -200%;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    z-index: 1; }
   .header__menu .header__lista {
     flex-direction: column;
     display: flex;
@@ -406,10 +551,34 @@ footer {
     text-decoration: none;
     text-align: center; }
   .header__menu .header__lista--item {
-    border-bottom: 1px solid black;
-    border-right: 1px solid black; }
-  .header__lista--alter {
-    border-top: 1px solid black; }
+    z-index: 1; }
   #btn-menu:checked ~ .header__menu {
     margin: 0;
-    margin-top: 260px; } }
+    margin-top: 750px; }
+  .carousel-item img {
+    width: 100%;
+    height: 300px; }
+  .complement {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 105px; }
+  header .search__list--box {
+    display: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #8B7587;
+    padding: 10px;
+    padding-left: 20px;
+    background: white url(../img/search__header.png) no-repeat 2px center;
+    background-size: 12px;
+    font-size: 13px; } }
+
+@media (max-width: 400px) {
+  .collection .cards .collection__card {
+    width: 100%;
+    height: 400px;
+    margin-right: 40px;
+    margin-left: 40px; } }
